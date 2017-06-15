@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{%extends "index.html"%}
+<html>
+{%block content%}
+<body>
+<div>
+	{% include "showData.html" %}
+	<embed type="image/svg+xml" src={{graph_data|safe}} style="max-width:1000px" />
+</div>
+</body>
+{%endblock%}
+</html>
